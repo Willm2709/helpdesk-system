@@ -55,7 +55,7 @@ Este projeto faz parte de um conjunto de aplicações desenvolvidas com foco em 
 ## 👨‍💻 Autor
 
 Desenvolvido por **William Moreira Souza**   
-[LinkedIn](https://www.linkedin.com/in/seuusuario) | [GitHub](https://github.com/seuusuario)
+[LinkedIn](https://www.linkedin.com/in/william-moreira-45288a1b4/) | [GitHub](https://github.com/Willm2709)
 
 ---
 

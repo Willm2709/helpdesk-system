@@ -72,6 +72,12 @@ class Program
 
         usuarios.Add(novoUsuario);
         Console.WriteLine("✅ Usuário cadastrado com sucesso!\n");
+
+        if (usuarios.Exists(u => u.Email == email))
+        {
+            Console.WriteLine("❌ Já existe um usuário com esse email.\n");
+            return;
+        }   
     }
 
     static void Login()
@@ -102,6 +108,7 @@ class Program
         while (executando)
         {
             Console.WriteLine("====== SISTEMA DE CHAMADOS ======");
+            Console.WriteLine($"Usuário logado: {usuarioLogado.Nome}\n");
             Console.WriteLine("1 - Abrir Chamado");
             Console.WriteLine("2 - Listar Chamados");
             Console.WriteLine("3 - Encerrar Chamado");
@@ -125,6 +132,11 @@ class Program
                     break;
                 default:
                     Console.WriteLine("Opção inválida.");
+                    break;
+                case "5":
+                    usuarioLogado = null;
+                    Console.WriteLine();
+                    executando = false;
                     break;
             }
         }
@@ -184,4 +196,5 @@ class Program
             Console.WriteLine("ID inválido.");
         }
     }
+
 }
